@@ -1,0 +1,157 @@
+.parent {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    }
+    
+    .div1 { grid-area: 2 / 1 / 5 / 3; }
+    .div2 { grid-area: 2 / 3 / 5 / 6; }
+
+
+body {
+    cursor: url("../images/pop.png"), pointer;
+    font-family: "Manrope", serif;
+    color: rgb(255, 255, 255);
+    background-color: blue;
+  }
+  
+  
+  
+  h1 {
+    font-family: "Geo", serif;
+      color: rgb(255, 255, 255);
+      font-size: 30px;
+      text-align: left;
+  }
+  
+  h2{
+    font-family: "Geo", serif;
+      font-weight: 400;
+      font-style: normal;
+      color: rgb(255, 255, 255);
+      font-size: 15px;
+      text-align: left;
+  }
+  
+  h3{
+    font-family: "Geo", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    text-align: center;
+  }
+  
+  
+  .sticky-header {
+    position: sticky;
+    top: 0;
+    background-color: blue;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    z-index: 1000;
+    }
+  
+  a{
+    text-decoration:underline rgb(255, 255, 255);
+    
+  }
+  
+  
+    
+    p{    
+      margin-top: 7em;
+      font-size: 13px;
+      color: rgb(255, 255, 255);
+      text-align:left;
+      line-height: 2em;
+      padding: 2rem;
+      margin-left: 2rem;
+      margin-right: 7rem;
+  
+    }
+  
+
+  img{
+    margin-top: 3em;
+    border-radius: 20rem;
+    padding: 3rem;
+    scale: 1.15;
+    display: flex;
+    margin-left: 10em;
+
+    /* Floating animation */
+    animation: floatImage 3s infinite ease-in-out;
+}
+
+/* Floating Animation */
+@keyframes floatImage {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-20px); }
+    100% { transform: translateY(0px); }
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .div1 img {
+        max-width: 250px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .div1 img {
+        max-width: 200px;
+    }
+}
+
+
+  .parent {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+  
+  .div1, .div2 {
+    flex: 1 1 100%; /* Full width on smaller screens */
+  }
+  
+  
+  @media (min-width: 1200px) {
+    .parent {
+      flex-wrap: nowrap;
+    }
+  
+    .div1, .div2 {
+      flex: 1 1 50%; /* Side by side on larger screens */
+    }
+
+    .img{
+      margin-left: 0em;
+      display: flex;
+  
+    }
+.p{
+  margin-top: 3em;
+}
+
+  }
+  
+   
+  
+  
+  
+  footer{
+  
+      font-family: "Geo", serif;
+      font-weight: 400;
+      font-style: normal;
+      color: rgb(255, 255, 255);
+      font-size: 15px;
+      text-align: center;
+      margin-top: 10em;
+      margin-bottom: 5em;
+    }
+  
